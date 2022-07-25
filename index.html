@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/a59b9b09ab.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Homes & Apartment Rentals - AirBnB</title>
+    <link rel="icon" href="img/airbnblogo.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href=""><img src="img/airbnb.svg"></a>
+        </div>
+        <nav>
+            <button><a class="nav1 anywhere" href="">Anywhere</a></button>
+            <span></span>
+            <button><a class="nav1" href="">Any week</a></button>
+            <span></span>
+            <button><a class="nav2" href="">Add guests</a>
+            <div class="search">
+                <a href=""><img src="img/search.svg"></a>
+            </div>         
+        </nav>
+        <div class="host">            
+            <a href="" class="nav button hover">Become a host</a>
+            <button class="world button hover"><img src="img/world.svg"></button>          
+            <button class="login button" onclick="myfun()" id="click">
+                <img src="img/drop.svg">
+                <img src="img/login.svg">               
+            </button>
+            <div class="sub-menu-1">
+                <ul class="list" id="content">
+                    <a href=""> Sign Up</a>
+                    <a href=""> Log in</a>
+                    <div class="line"></div>
+                    <a href=""> Host your home</a>
+                    <a href=""> Host an experience</a>
+                    <a href=""> Help</a>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="filter-option">
+        <button class="icon scroll-button1" onclick="scrolll()"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="small-icons"> 
+            <div class="icon1 flex-icon">
+                <a href="#">
+                    <img src="img/header-icons/Treehouse.jpg">
+                    <div class="icon-text">
+                        Treehouses
+                    </div>
+                </a>
+            </div>
+            <div class="icon2 flex-icon">
+                <a href="">
+                    <img src="img/header-icons/Nationalpark.jpg">
+                    <div class="icon-text">
+                        National parks
+                    </div>
+                </a>
+            </div>    
+            <div class="icon3 flex-icon">
+                <a href="">
+                    <img src="img/header-icons/Tinyhome.jpg">
+                    <div class="icon-text">
+                            Tiny homes
+                    </div>
+                </a>
+            </div>
+            <div class="icon4 flex-icon">
+                <a href="">
+                    <img src="img/header-icons/Islands.jpg" alt="">
+                    <div class="icon-text">
+                            Islands
+                    </div>
+                </a>
+            </div>
+            <div class="icon5 flex-icon">
+                <a href="">
+                    <img src="img/header-icons/Beaches.jpg">
+                    <div class="icon-text">
+                            Beaches
+                    </div>
+                </a>
+            </div>
+            <div class="icon6 flex-icon">
+                <a href="">
+                    <img src="img/header-icons/Cabins.jpg">
+                    <div class="icon-text">
+                            Cabins
+                    </div>
+                </a>
+            </div>
+            <div class="icon7 flex-icon">
+                <a href="">
+                    <img src="img/header-icons/OMG.jpg">
+                    <div class="icon-text">
+                            OMG!
+                    </div>
+                </a>
+            </div>
+            <div class="icon8 flex-icon">
+                <a href="">
+                    <img src="img/header-icons/camping.jpg">
+                    <div class="icon-text">
+                            Camping
+                    </div>
+                </a>
+            </div>
+            <div class="icon9 flex-icon">
+                <a href="">
+                    <img src="img/header-icons/Aframes.jpg">
+                    <div class="icon-text">
+                            A-frames
+                    </div>
+                </a>
+            </div>
+            <div class="icon10 flex-icon">
+                <a href="">
+                    <img src="img/header-icons/Design.jpg">
+                    <div class="icon-text">
+                            Design
+                    </div>
+                </a>
+            </div>
+            <div class="icon11 flex-icon">
+                <a href="">
+                    <img src="img/header-icons/Arctic.jpg">
+                    <div class="icon-text">
+                            Arctic
+                    </div>
+                </a>
+            </div>
+            <div class="icon12 flex-icon">
+                <a href="">
+                    <img src="img/header-icons/Bedbreak.jpg">
+                    <div class="icon-text">
+                            Bed & breakfast
+                    </div>
+                </a>
+            </div>
+            <div class="icon13 flex-icon">
+                <a href="">
+                    <img src="img/header-icons/Lakefront.jpg">
+                    <div class="icon-text">
+                            Lakefront
+                    </div>
+                </a>
+            </div>
+            <div class="icon14 flex-icon">
+                <a href="">
+                    <img src="img/header-icons/Surfing.jpg">
+                    <div class="icon-text">
+                            Surfing
+                    </div>
+                </a>
+            </div>
+            <div class="icon15 flex-icon">
+                <a href="">
+                    <img src="img/header-icons/Countryside.jpg">
+                    <div class="icon-text">
+                            Countryside
+                    </div>
+                </a>
+            </div>
+            <div class="icon16 flex-icon">
+                <a href="">
+                    <img src="img/header-icons/Caves.jpg">
+                    <div class="icon-text">
+                            Caves
+                    </div>
+                </a>
+            </div>
+            <div class="icon17 flex-icon">
+                <a href="">
+                    <img src="img/header-icons/Tropical.jpg">
+                    <div class="icon-text">
+                            Tropical
+                    </div>
+                </a>
+            </div>
+            <div class="icon18 flex-icon">
+                <a href="">
+                    <img src="img/header-icons/Sharedhomes.jpg">
+                    <div class="icon-text">
+                            Shared Homes
+                    </div>
+                </a>
+            </div>
+            <div class="icon19 flex-icon">
+                <a href="">
+                    <img src="img/header-icons/Houseboats.jpg">
+                    <div class="icon-text">
+                            Houseboats
+                    </div>
+                </a>
+            </div>
+            <div class="icon20 flex-icon">
+                <a href="">
+                    <img src="img/header-icons/Farms.jpg">
+                    <div class="icon-text">
+                            Farms
+                    </div>
+                </a>
+            </div>
+            <div class="icon21 flex-icon">
+                <a href="">
+                    <img src="img/header-icons/Pools.jpg">
+                    <div class="icon-text">
+                            Amazing pools
+                    </div>
+                </a>
+            </div>
+            <div class="icon22 flex-icon">
+                <a href="">
+                    <img src="img/header-icons/Earthhomes.jpg">
+                    <div class="icon-text">
+                            Earth homes
+                    </div>
+                </a>
+            </div>
+            <div class="icon23 flex-icon">
+                <a href="">
+                    <img src="img/header-icons/Lake.jpg">
+                    <div class="icon-text">
+                            Lake
+                    </div>
+                </a>
+            </div>
+            <div class="icon24 flex-icon">
+                <a href="">
+                    <img src="img/header-icons/Views.jpg">
+                    <div class="icon-text">
+                            Amazing views
+                    </div>
+                </a>
+            </div>
+            <div class="icon24 flex-icon">
+                <a href="">
+                    <img src="img/header-icons/Luxe.jpg">
+                    <div class="icon-text">
+                            Luxe
+                    </div>
+                </a>
+            </div>
+            <div class="icon25 flex-icon">
+                <a href="">
+                    <img src="img/header-icons/Golfing.jpg">
+                    <div class="icon-text">
+                            Golfing
+                    </div>
+                </a>
+            </div>
+            <div class="icon26 flex-icon">
+                <a href="">
+                    <img src="img/header-icons/Historical.jpg">
+                    <div class="icon-text">
+                            Historical homes
+                    </div>
+                </a>
+            </div>
+            <div class="icon27 flex-icon">
+                <a href="">
+                    <img src="img/header-icons/Castles.jpg">
+                    <div class="icon-text">
+                            Castles
+                    </div>
+                </a>
+            </div>
+            <div class="icon27 flex-icon">
+                <a href="">
+                    <img src="img/header-icons/Iconic.jpg">
+                    <div class="icon-text">
+                            Iconic cities
+                    </div>
+                </a>
+            </div>
+            <div class="icon28 flex-icon">
+                <a href="">
+                    <img src="img/header-icons/Cycladic.jpg">
+                    <div class="icon-text">
+                            Cycladic homes
+                    </div>
+                </a>
+            </div>
+            <div class="icon29 flex-icon">
+                <a href="">
+                    <img src="img/header-icons/Mansions.jpg">
+                    <div class="icon-text">
+                            Mansions
+                    </div>
+                </a>
+            </div>
+        </div>   
+        <button class="icon scroll-button2" onclick="scrollr()"><i class="fa-solid fa-chevron-right"></i></button>  
+        <div class="filter">
+            <img src="img/filter.svg">
+            <div class="filter-text">
+                    Filters
+            </div>
+        </div>                
+    </div>
+    <script>
+        function scrolll() {
+            var left = document.querySelector(".small-icons");
+            left.scrollBy(-350, 0)
+        }
+    
+        function scrollr() {
+            var right = document.querySelector(".small-icons");
+            right.scrollBy(350, 0)
+        }
+    </script>
+</body>
+</html>
