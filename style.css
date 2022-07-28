@@ -149,17 +149,19 @@ nav button:last-of-type{
     top: -132px; 
     display: none;
 }
+
 .sub-menu-1 ul{
     display: flex;
     flex-direction: column;
     margin-top: 200px;
     padding-left: 0;
+    padding-bottom: 10px;
     min-width: 230px;
     margin-right: 8px;
     border: 1px solid #e4e1e1;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: white;
-    height: 200px;
+    height: 250px;
     box-shadow: rgba(4, 4, 4, 0.1)5px -3px 5px;   
 }
 .sub-menu-1 ul > *{
@@ -167,9 +169,12 @@ nav button:last-of-type{
     text-decoration: none;
     color: #222222;
     padding-inline: 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
 }
 .sub-menu-1 ul > *:hover{
-    background-color: #dddddd;
+    background-color: #fbf4f4;
 }
 .sub-menu-1 ul a:first-child{
     font-weight: bold;
@@ -203,7 +208,7 @@ nav button:last-of-type{
 .small-icons::-webkit-scrollbar{
     -webkit-appearance: none;
 }
-.flex-icon:hover .icon-text{
+.flex-icon:hover{
     color: #222222;
 }
 .icon{
@@ -280,6 +285,9 @@ nav button:last-of-type{
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+.location-image{
+    overflow-x: auto;
 }
 .location-image img{
     width: 300px;
@@ -375,14 +383,18 @@ nav button:last-of-type{
     align-items: center;
     gap: 20px;
 }
-.footer2-right{
+.footer2-left{
     display: flex;
     flex-direction: row;
     gap: 5px;
     justify-content: center;
     align-items: center;
 }
-.footer2-right a img{
+.footer2 .currency{
+    display: flex;
+    gap: 10px;
+}
+.footer2-left a img{
     width: 100%;
 }
 .footer2 img{
