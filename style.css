@@ -566,22 +566,25 @@ nav button:last-of-type{
             border-bottom: 1px solid #dddddd;
             box-shadow: rgba(14, 13, 13, 0.05)1px 2px 5px;
             top: 70px;
+            height: 70px;
         }
         .small-icons{
             max-width: 100%;
             margin-top: 0;
         }
+        .icon-text{
+            padding: 5px;
+        }
         .location-image{
-            width: 400px;
+            width: 430px;
             overflow-x: auto;
             scroll-behavior: smooth;
             display: flex;
             position: relative;
         }
         .location-image img{
-            width: 400px;
-            height: 400px;
-            border-radius: 15px;
+            width: 430px;
+            height: 410px;
         }
         .footer-mobile{
             display: block;
