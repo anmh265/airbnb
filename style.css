@@ -358,7 +358,7 @@ nav button:last-of-type{
     text-overflow: ellipsis;
 }
 .location-image{
-    max-width: 300px;
+    width: 299px;
     overflow-x: auto;
     scroll-behavior: smooth;
     display: flex;
@@ -571,6 +571,18 @@ nav button:last-of-type{
             max-width: 100%;
             margin-top: 0;
         }
+        .location-image{
+            width: 400px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            display: flex;
+            position: relative;
+        }
+        .location-image img{
+            width: 400px;
+            height: 400px;
+            border-radius: 15px;
+        }
         .footer-mobile{
             display: block;
             height: 55px;
@@ -599,3 +611,4 @@ nav button:last-of-type{
         .wishlist img, .footer-login img{
             width: 50%;
         }
+    }
