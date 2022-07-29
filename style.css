@@ -193,7 +193,6 @@ nav button:last-of-type{
     z-index: 9;
     top: 81px;
     height: 85px;
-    border-bottom: 0.05ch solid #eae7e7;
     background-color: white;
 }
 .small-icons{
@@ -202,14 +201,16 @@ nav button:last-of-type{
     scroll-behavior: smooth;
     max-width: 77%;
     margin-right: 5px;
-    position: relative;
-    top: 12px;
+    margin-top: 20px;
 }
 .small-icons::-webkit-scrollbar{
     -webkit-appearance: none;
 }
-.flex-icon:hover{
+.flex-icon:hover .icon-text{
     color: #222222;
+}
+.flex-icon:hover{
+    border-bottom: 1px solid #eae7e7;
 }
 .icon{
     width: 29px;
@@ -265,7 +266,7 @@ nav button:last-of-type{
 
 .locations{
     display: flex;
-    padding-inline: 110px;
+    justify-content: center;
     padding-top: 10px;
     flex-wrap: wrap;
 }
@@ -287,8 +288,35 @@ nav button:last-of-type{
     text-overflow: ellipsis;
 }
 .location-image{
+    max-width: 300px;
     overflow-x: auto;
+    scroll-behavior: smooth;
+    display: flex;
+    position: relative;
 }
+.location-image::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+/* .image-icon{
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    color: #474545;
+    font-size: 12px;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;  
+    background: white;
+    position: absolute;
+    z-index: 5;
+}
+.image-scroll1{
+    top: 30%;
+}
+.image-scroll2{
+    left: 282px;
+    bottom: 62%;
+} */
 .location-image img{
     width: 300px;
     height: 300px;
@@ -360,7 +388,7 @@ nav button:last-of-type{
     bottom: 0;
     display: flex;
     justify-content: space-between;
-    padding-inline: 110px;
+    margin-inline: 110px;
     border-top: 0.05ch solid #eae7e7;
     height: 50px;
 }
@@ -401,3 +429,18 @@ nav button:last-of-type{
     width: 10%;
 }
 
+/* @media screen and (max-width:480px){
+
+        .logo, .host, nav, .footer, .icon, .filter{
+            display: none;
+        }
+
+
+        .filter-option{
+            display: block;
+        }
+        .small-icons{
+            max-width: 100%;
+        }
+        
+    } */
