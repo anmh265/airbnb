@@ -89,6 +89,75 @@ nav button:last-of-type{
     flex: 1 0 140px;
 }
 
+.mobile-nav{
+    height: 60px;
+    display: none;
+    position: sticky;
+    top: 0;
+    z-index: 12;
+    background-color: white;
+    padding-top: 15px;
+    margin-bottom:0;
+}
+.mobile-nav-option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #dddddd;
+    max-width: 430px;
+    margin: auto;
+    height: 53px;
+    border-radius: 50px;    
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.05) -2px 4px 5px;
+}
+.filter-left{
+    display: flex;
+    gap: 20px;
+    border: none;
+    align-items: center;
+    margin-left: 10px;
+    background: none;
+    cursor: pointer;
+}
+.filter-left .text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.filter-right{
+    margin-right: 10px;
+    background: none;
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.filter-left img{
+    width: 15px;
+    display: flex;
+    background-color: #1e1d1d;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+.filter-right img{
+    width: 15px;
+}
+.filter-left .text1{
+    font-size: 14px;
+    font-weight: 600;
+}
+.filter-left .text2{
+    font-size: 12px;
+    color: #717171;
+}
+
+
 .host{
     display: flex;
     flex-direction: row;
@@ -131,6 +200,7 @@ nav button:last-of-type{
     border: 1px solid white;
     background-color: #f9f5f5;
     border-radius: 25px;
+    cursor: pointer;
 }
 .host .login{
     border: 1px solid #e4e1e1;
@@ -191,7 +261,7 @@ nav button:last-of-type{
     align-items: center;
     position: sticky;
     z-index: 9;
-    top: 81px;
+    top: 79px;
     height: 85px;
     background-color: white;
 }
@@ -382,6 +452,39 @@ nav button:last-of-type{
     width: 17px;
     height: 30px;
 }
+.mobile-map{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    position: fixed;
+    bottom: 50px;
+    left: 190px
+}
+.mobile-map a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background-color: #1e1d1d;
+    padding: 10px;
+    border-radius: 25px;
+    height: 20px;
+    width: 70px;
+    font-weight: 600;
+}
+.mobile-map a > *{
+    padding-inline: 5px;
+}
+.mobile-map img{
+    width: 17px;
+    height: 30px;
+}
+
+
+
 .footer{
     position: sticky;
     background-color: white;
@@ -428,19 +531,71 @@ nav button:last-of-type{
 .footer2 img{
     width: 10%;
 }
+.footer-mobile{
+    display: none;
+}
 
-/* @media screen and (max-width:480px){
 
-        .logo, .host, nav, .footer, .icon, .filter{
+
+
+@media screen and (max-width:480px){
+
+        .logo, .host, nav, .footer, .icon, .filter, header{
             display: none;
         }
-
-
+        header{
+            border-bottom: none;
+        }
+        .mobile-nav{
+            display: block;
+        }
+        .map{
+            display: none;
+        }
+        .mobile-map{
+            display: flex;
+        }
+        .flex-icon {
+            width: 95px;
+        }
+        .flex-icon a{
+            padding-inline: 14px;
+        }
         .filter-option{
             display: block;
+            border-bottom: 1px solid #dddddd;
+            box-shadow: rgba(14, 13, 13, 0.05)1px 2px 5px;
+            top: 70px;
         }
         .small-icons{
             max-width: 100%;
+            margin-top: 0;
         }
-        
-    } */
+        .footer-mobile{
+            display: block;
+            height: 55px;
+            position: sticky;
+            z-index: 13;
+            background-color: white;
+            bottom: 0;
+        }
+        .footer-mobile-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 45px;
+            margin-top: 10px;
+        }
+        .explore, .wishlist, .footer-login{
+            width: 55px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .explore img{
+            width: 40%;
+        }
+        .wishlist img, .footer-login img{
+            width: 50%;
+        }
